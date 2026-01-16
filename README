@@ -3,3 +3,4 @@ TODO:
     - Add presets 
         - Ex Click(500,500) then time.sleep(1) then Click(1000, 800)
     - Add ability to add actions in sequence (tied with presets)
+    - Save presets to a json
