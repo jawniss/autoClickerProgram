@@ -1,12 +1,15 @@
 import pyautogui
 import time
 
+# Docs say move top left to abort prog
+pyautogui.FAILSAFE = True
+
 print("Please enter number of count: ")
 count = int(input())
 
 contactItemCoordsDict = {
     "1920x1080": [800, 850],
-    "1920x1440": [800, 1250]
+    "1920x1440": [800, 1050]
 }
 contactExchangeButtonCoordsDict = {
     "1920x1080": [1500, 950],
@@ -28,7 +31,7 @@ if pyautogui.size().width == 1920:
             exchangeCoords = contactExchangeButtonCoordsDict["1920x1440"]
 
 for i in range(count):
-    print("Cycle ", i, " /", count)
+    print("Cycle", i+1, "/", count)
     # Contact button 800, 850
     pyautogui.moveTo(contactCoords[0], contactCoords[1])
     pyautogui.click()
