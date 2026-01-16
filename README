@@ -1,0 +1,5 @@
+TODO:
+    - For setting location, make can move mouse somewhere and click a button to set there
+    - Add presets 
+        - Ex Click(500,500) then time.sleep(1) then Click(1000, 800)
+    - Add ability to add actions in sequence (tied with presets)
